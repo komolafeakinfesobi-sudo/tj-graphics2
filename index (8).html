@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="TJ GRAPHICS — Graphic Designer and Video Editor. Flyers, branding, social media designs, reels, motion graphics and professional video editing.">
+<meta name="keywords" content="TJ GRAPHICS, graphic designer, video editor, flyer design, logo design, branding, video editing, Nigeria">
+<title>TJ GRAPHICS | Graphic Designer & Video Editor</title>
+<style>
+:root{--bg:#080808;--panel:#111;--text:#f8f8f8;--muted:#aaa;--gold:#ffd429;--line:#292929}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);line-height:1.55}
+a{color:inherit;text-decoration:none}.wrap{width:min(1180px,92%);margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(8,8,8,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav{height:74px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{font-weight:1000;font-size:1.35rem;letter-spacing:-1px}.brand span,h1 em,h2 em{color:var(--gold);font-style:normal}
+nav ul{display:flex;gap:24px;list-style:none;color:#ddd;font-size:.92rem}
+nav a:hover{color:var(--gold)}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 20px;border-radius:999px;background:var(--gold);color:#111;font-weight:900;border:0;cursor:pointer;transition:.2s}
+.btn:hover{transform:translateY(-2px)}.btn.dark{background:transparent;color:#fff;border:1px solid #444}
+section{padding:95px 0}.eyebrow{color:var(--gold);font-size:.76rem;font-weight:900;letter-spacing:3px;text-transform:uppercase;margin-bottom:16px}
+h1{font-size:clamp(4rem,9vw,8.2rem);line-height:.83;letter-spacing:-.08em}
+h2{font-size:clamp(2.6rem,5vw,5rem);line-height:.9;letter-spacing:-.07em}
+.hero{min-height:calc(100vh - 74px);display:grid;grid-template-columns:1.08fr .92fr;gap:55px;align-items:center}
+.hero p{max-width:620px;color:var(--muted);font-size:1.08rem;margin:28px 0}
+.actions,.links{display:flex;gap:12px;flex-wrap:wrap}.links{margin-top:22px;gap:18px;color:#ddd;font-size:.94rem}.links a:hover{color:var(--gold)}
+.hero-art{min-height:470px;border:1px solid var(--line);border-radius:30px;overflow:hidden;background:linear-gradient(145deg,#1a1a1a,#0d0d0d)}
+.hero-art img{width:100%;height:100%;object-fit:cover}
+.head{display:flex;justify-content:space-between;align-items:end;gap:28px;margin-bottom:35px}.head p{max-width:470px;color:var(--muted)}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card,.price,.bookbox{background:var(--panel);border:1px solid var(--line);border-radius:22px;padding:30px}
+.card{min-height:245px}.num{color:var(--gold);font-weight:1000;margin-bottom:45px}.card h3{font-size:1.4rem;margin-bottom:10px}.card p{color:var(--muted)}
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:17px}.pill{padding:7px 10px;border-radius:999px;background:#1a1a1a;border:1px solid #303030;color:#ddd;font-size:.78rem}
+.portfolio{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.work{aspect-ratio:1;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#151515;position:relative}
+.work img{width:100%;height:100%;object-fit:cover;transition:.35s}.work:hover img{transform:scale(1.04)}
+.tag{position:absolute;left:12px;bottom:12px;background:rgba(0,0,0,.76);padding:7px 10px;border-radius:999px;font-size:.72rem;font-weight:800}
+.price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.price{position:relative;min-height:380px;display:flex;flex-direction:column}.price.featured{border-color:var(--gold);transform:translateY(-7px)}
+.badge{position:absolute;top:15px;right:15px;background:var(--gold);color:#111;padding:6px 9px;border-radius:999px;font-size:.68rem;font-weight:1000}
+.amount{font-size:2.5rem;font-weight:1000;margin:18px 0 8px}.price p{color:var(--muted)}.price ul{list-style:none;flex:1;margin:12px 0 22px}.price li{padding:8px 0;border-bottom:1px solid #242424;color:#ddd}.price li::before{content:"✓";color:var(--gold);font-weight:900;margin-right:8px}
+.booking{display:grid;grid-template-columns:.82fr 1.18fr;gap:28px}.bookbox p{color:var(--muted);margin:15px 0 24px}
+.contact{display:grid;gap:10px}.contact a{padding:12px 14px;background:#181818;border:1px solid #242424;border-radius:12px}.contact a:hover{border-color:var(--gold)}
+form{display:grid;gap:12px;background:var(--panel);border:1px solid var(--line);padding:30px;border-radius:24px}
+label{font-size:.8rem;color:#bbb;font-weight:800}input,select,textarea{width:100%;padding:14px;border-radius:12px;background:#0b0b0b;color:#fff;border:1px solid #303030;font:inherit}
+textarea{min-height:130px;resize:vertical}input:focus,select:focus,textarea:focus{border-color:var(--gold);outline:none}
+footer{border-top:1px solid var(--line);padding:28px 0;color:#777;display:flex;justify-content:space-between;gap:20px;font-size:.84rem}
+@media(max-width:900px){nav ul{display:none}.hero,.booking{grid-template-columns:1fr}.grid3,.price-grid{grid-template-columns:1fr}.portfolio{grid-template-columns:repeat(2,1fr)}.price.featured{transform:none}}
+@media(max-width:550px){section{padding:72px 0}.portfolio{grid-template-columns:1fr}footer{display:block}footer div+div{margin-top:8px}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+<a class="brand" href="#">TJ <span>GRAPHICS</span></a>
+<ul><li><a href="#services">Services</a></li><li><a href="#work">My Work</a></li><li><a href="#pricing">Pricing</a></li><li><a href="#book">Book Me</a></li></ul>
+<a class="btn" href="#book">Book Me</a>
+</nav></div></header>
+
+<main>
+<section class="hero wrap">
+<div>
+<div class="eyebrow">Graphic Designer • Video Editor</div>
+<h1>CREATE.<br><em>EDIT.</em><br>STAND OUT.</h1>
+<p>I create professional graphics and videos for businesses, brands, events, creators and social media. From flyers and logos to reels, motion graphics and video editing.</p>
+<div class="actions"><a class="btn" href="#work">View My Work</a><a class="btn dark" href="#book">Book a Project</a></div>
+<div class="links"><a href="tel:+2348161852488">📞 08161852488</a><a href="https://wa.me/2348161852488" target="_blank" rel="noopener">💬 WhatsApp</a><a href="https://instagram.com/tjgraphics06" target="_blank" rel="noopener">📸 @tjgraphics06</a></div>
+</div>
+<div class="hero-art"><img src="designs/design-01.jpg" alt="Featured TJ GRAPHICS work"></div>
+</section>
+
+<section id="services"><div class="wrap">
+<div class="head"><h2>WHAT I <em>DO</em></h2><p>Creative services designed to make your brand, content or event look professional and memorable.</p></div>
+<div class="grid3">
+<article class="card"><div class="num">01</div><h3>Graphic Design</h3><p>Flyers, posters, logos, branding, social media graphics and promotional artwork.</p><div class="pills"><span class="pill">Flyers</span><span class="pill">Posters</span><span class="pill">Logos</span><span class="pill">Branding</span></div></article>
+<article class="card"><div class="num">02</div><h3>Video Editing</h3><p>Professional edits for Reels, TikTok, YouTube, adverts, events and personal projects.</p><div class="pills"><span class="pill">Reels</span><span class="pill">YouTube</span><span class="pill">Promos</span><span class="pill">Events</span></div></article>
+<article class="card"><div class="num">03</div><h3>Motion & Effects</h3><p>Motion graphics, text animation, transitions, color grading and sound design.</p><div class="pills"><span class="pill">Motion</span><span class="pill">Animation</span><span class="pill">Color</span><span class="pill">Sound</span></div></article>
+</div></div></section>
+
+<section id="work"><div class="wrap">
+<div class="head"><h2>MY <em>WORK</em></h2><p>Your uploaded portfolio designs are displayed below.</p></div>
+<div class="portfolio">
+<figure class="work"><img src="designs/design-01.jpg" alt="TJ GRAPHICS design 1"><div class="tag">Graphic Design</div></figure>
+<figure class="work"><img src="designs/design-02.png" alt="TJ GRAPHICS design 2"><div class="tag">Graphic Design</div></figure>
+<figure class="work"><img src="designs/design-03.jpg" alt="TJ GRAPHICS design 3"><div class="tag">Poster Design</div></figure>
+<figure class="work"><img src="designs/design-04.png" alt="TJ GRAPHICS design 4"><div class="tag">Social Media</div></figure>
+<figure class="work"><img src="designs/design-05.jpg" alt="TJ GRAPHICS design 5"><div class="tag">Creative Design</div></figure>
+<figure class="work"><img src="designs/design-06.png" alt="TJ GRAPHICS design 6"><div class="tag">Branding</div></figure>
+<figure class="work"><img src="designs/design-07.jpg" alt="TJ GRAPHICS design 7"><div class="tag">Poster Design</div></figure>
+<figure class="work"><img src="designs/design-08.png" alt="TJ GRAPHICS design 8"><div class="tag">Social Media</div></figure>
+<figure class="work"><img src="designs/design-09.JPG" alt="TJ GRAPHICS design 9"><div class="tag">Creative Design</div></figure>
+</div></div></section>
+
+<section id="pricing"><div class="wrap">
+<div class="head"><h2>PRICING <em>PACKAGES</em></h2><p>Starting prices for common projects. Custom work can be quoted on WhatsApp.</p></div>
+<div class="price-grid">
+<article class="price"><h3>STARTER</h3><div class="amount">₦5,000</div><p>For one simple graphic project.</p><ul><li>1 graphic design</li><li>1 concept</li><li>2 revisions</li><li>High-resolution final file</li></ul><button class="btn" onclick="choosePackage('Starter — ₦5,000')">Choose Starter</button></article>
+<article class="price featured"><span class="badge">POPULAR</span><h3>PRO</h3><div class="amount">₦10,000</div><p>For clients needing more flexibility.</p><ul><li>Up to 2 designs</li><li>2 concepts</li><li>3 revisions</li><li>Print + social-ready files</li></ul><button class="btn" onclick="choosePackage('Pro — ₦10,000')">Choose Pro</button></article>
+<article class="price"><h3>PREMIUM</h3><div class="amount">₦20,000</div><p>For larger creative projects.</p><ul><li>Up to 4 designs</li><li>Creative direction</li><li>4 revisions</li><li>Priority delivery</li></ul><button class="btn" onclick="choosePackage('Premium — ₦20,000')">Choose Premium</button></article>
+</div></div></section>
+
+<section><div class="wrap">
+<div class="head"><h2>WHY <em>TJ?</em></h2><p>Professional visuals with a creative approach from concept to final delivery.</p></div>
+<div class="grid3">
+<article class="card"><div class="num">01</div><h3>Creative</h3><p>Ideas are turned into clean, modern and attention-grabbing visuals.</p></article>
+<article class="card"><div class="num">02</div><h3>Versatile</h3><p>Graphic design and video editing under one creative brand.</p></article>
+<article class="card"><div class="num">03</div><h3>Client Focused</h3><p>Your brief, feedback and deadline stay at the center of the project.</p></article>
+</div></div></section>
+
+<section id="book"><div class="wrap booking">
+<div class="bookbox"><div class="eyebrow">Start a project</div><h2>BOOK <em>TJ.</em></h2><p>Fill out the form and WhatsApp will open with your project details ready to send.</p>
+<div class="contact"><a href="tel:+2348161852488">📞 08161852488 — Call</a><a href="https://wa.me/2348161852488" target="_blank" rel="noopener">💬 WhatsApp TJ GRAPHICS</a><a href="https://instagram.com/tjgraphics06" target="_blank" rel="noopener">📸 Instagram — @tjgraphics06</a></div>
+</div>
+<form id="bookingForm">
+<label for="name">Your name</label><input id="name" required placeholder="Your name">
+<label for="service">Service</label><select id="service"><option>Graphic Design</option><option>Video Editing</option><option>Motion Graphics</option><option>Branding</option><option>Social Media Design</option><option>Custom Project</option></select>
+<label for="package">Package</label><select id="package"><option>Starter — ₦5,000</option><option>Pro — ₦10,000</option><option>Premium — ₦20,000</option><option>Custom quote</option></select>
+<label for="deadline">Preferred deadline</label><input id="deadline" type="date">
+<label for="brief">Project details</label><textarea id="brief" required placeholder="Tell TJ what you need..."></textarea>
+<button class="btn" type="submit">Book Through WhatsApp →</button>
+</form>
+</div></section>
+</main>
+
+<footer class="wrap"><div>© 2026 TJ GRAPHICS</div><div><a href="https://instagram.com/tjgraphics06" target="_blank" rel="noopener">@tjgraphics06</a> • <a href="tel:+2348161852488">08161852488</a></div></footer>
+
+<script>
+function choosePackage(name){
+  document.getElementById('package').value=name;
+  document.getElementById('book').scrollIntoView({behavior:'smooth'});
+}
+document.getElementById('bookingForm').addEventListener('submit',function(e){
+  e.preventDefault();
+  const name=document.getElementById('name').value.trim();
+  const service=document.getElementById('service').value;
+  const pkg=document.getElementById('package').value;
+  const deadline=document.getElementById('deadline').value || 'Not specified';
+  const brief=document.getElementById('brief').value.trim();
+  const msg='Hello TJ GRAPHICS!%0A%0AI want to book a project.%0A%0AName: '+encodeURIComponent(name)+'%0AService: '+encodeURIComponent(service)+'%0APackage: '+encodeURIComponent(pkg)+'%0ADeadline: '+encodeURIComponent(deadline)+'%0AProject details: '+encodeURIComponent(brief);
+  window.open('https://wa.me/2348161852488?text='+msg,'_blank');
+});
+</script>
+</body>
+</html>
